@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "vue-router": "^3.0.1",
+    "watch": "^1.0.2"
+  }
+}

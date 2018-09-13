@@ -22,6 +22,10 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:user_id]
 
+config :trends_4chan, Trends4chan.Auth.Guardian,
+  issuer: "trends_4chan",
+  secret_key: "mNEJ08a+hTPgliqPNENjiYRYbKk4+Jq8sXw4k5h7NCHKGLZqh+EiZOoeq4SdUrjv"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"

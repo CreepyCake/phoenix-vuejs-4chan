@@ -20,7 +20,7 @@ defmodule Trends4chan.Mixfile do
   def application do
     [
       mod: {Trends4chan.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :corsica]
     ]
   end
 
@@ -36,6 +36,7 @@ defmodule Trends4chan.Mixfile do
       {:phoenix, "~> 1.3.4"},
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 3.2"},
+      {:phoenix_html, "~> 2.12"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
@@ -44,7 +45,8 @@ defmodule Trends4chan.Mixfile do
       {:bcrypt_elixir, "~> 1.1"},
       {:absinthe, "~> 1.4"},
       {:absinthe_ecto, "~> 0.1.3"},
-      {:absinthe_plug, "~> 1.4"}
+      {:absinthe_plug, "~> 1.4"},
+      {:corsica, "~> 1.1"}
     ]
   end
 

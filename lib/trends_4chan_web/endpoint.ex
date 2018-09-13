@@ -35,6 +35,10 @@ defmodule Trends4chanWeb.Endpoint do
     key: "_trends_4chan_key",
     signing_salt: "BlvioWwh"
 
+  plug Corsica,
+    origins: "*",
+    allow_headers: ["content-type", "authorization"]
+
   plug Trends4chanWeb.Router
 
   @doc """
